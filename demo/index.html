@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Auto Change Focus</title>
+    <link rel="stylesheet" href="css/examples.css">
+</head>
+
+<body id="home">
+
+    <main class="main">
+
+        <h1>Auto Change Focus</h1>
+
+        <ul>
+            <li>
+                <section>
+                    <div class="example">
+                        <h3>4 Input, unique checkKeyPressed (only numbers) and different max length</h3>
+                        <div id="example1"></div>
+                    </div>
+                </section>
+            </li>
+
+            <hr>
+            <li>
+                <section>
+                    <div class="example">
+                        <h3>2 Input, 2 checkKeyPressed (first only numbers, second everything) and different max length
+                        </h3>
+                        <div id="example2"></div>
+                    </div>
+                </section>
+            </li>
+
+            <hr>
+
+            <li>
+                <section>
+                    <div class="example">
+                        <h3>2 Input, custom placeholder </h3>
+                        <div id="example3"></div>
+                    </div>
+                </section>
+            </li>
+
+        </ul>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../app/index.js" type="module"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('#example1').autoChangeFocus({
+                inputsList: [
+                    {
+                        id: 'example1id0',
+                        maxLength: 3,
+                    },
+                    {
+                        id: 'example1id1',
+                        maxLength: 5
+                    },
+                    {
+                        id: 'example1id2',
+                        maxLength: 1
+                    },
+                    {
+                        id: 'example1id3',
+                        maxLength: 9
+                    },
+                    {
+                        id: 'example1id4',
+                        maxLength: 1
+                    },
+                    {
+                        id: 'example1id5',
+                        maxLength: 2
+                    },
+                ],
+                checkKeyPressed: function (event) {
+                    if (isNaN(event.key)) {
+                        return false;
+                    }
+                    return true;
+                }
+            });
+
+
+            $('#example2').autoChangeFocus({
+                inputsList: [
+                    {
+                        id: 'example2id0',
+                        maxLength: 3,
+                        checkKeyPressed: function (event) {
+                            if (isNaN(event.key)) {
+                                return false;
+                            }
+                            return true;
+                        }
+                    },
+                    {
+                        id: 'example2id1',
+                        maxLength: 5
+                    },
+                ],
+            });
+
+            $('#example3').autoChangeFocus({
+                inputsList: [
+                    {
+                        id: 'example3id0',
+                        maxLength: 4
+                    },
+                    {
+                        id: 'example3id1',
+                        maxLength: 8,
+                        class: 'autochangefocus-customclass'
+                    },
+                ],
+                placeholderChar: '_'
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

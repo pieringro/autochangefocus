@@ -1,0 +1,50 @@
+body{
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+}
+
+a, a:hover, a:visited{
+	color:#666;
+}
+
+.logo a{
+	color:#fff;
+	position:relative;
+	top:25px;
+	left:35px;
+}
+
+h1{
+	font-size: 24px;
+	margin-bottom:15px;
+}
+
+h2{
+	font-weight: bold;
+	margin-bottom:10px;
+}
+
+.main{
+	margin:40px;
+}
+
+section{
+	display:inline-block;
+	width:100%;
+}
+
+.autochangefocus-input{
+    margin: 0 10px;
+}
+
+.example{
+	margin:0 10px;
+}
+
+hr{
+	margin:50px 0;
+	color: #ddd;
+	background-color: #ddd;
+	height: 2px;
+	border:none;
+}

@@ -1,0 +1,40 @@
+{
+  "name": "auto_change_focus",
+  "version": "1.0.0",
+  "description": "A chain of text inputs that automatically changes focus to the next one as soon as the last character has been typed in the previous.",
+  "author": "Pierluigi Ingrosso",
+  "contributors": [
+    {
+      "name": "Pierluigi Ingrosso",
+      "email": "p.ingrosso9@gmail.com",
+      "url": "https://github.com/pieringro"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/pieringro/autochangefocus/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/pieringro/autochangefocus#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pieringro/autochangefocus.git"
+  },
+  "main": "./app/index.js",
+  "scripts": {
+    "serve": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "focus",
+    "automatic",
+    "change",
+    "auto",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}
