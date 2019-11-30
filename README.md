@@ -1,4 +1,5 @@
 # Auto Change Focus
+[![NPM](https://nodei.co/npm/auto_change_focus.png?compact=true)](https://www.npmjs.com/package/auto_change_focus)
 A chain of text inputs that automatically changes focus to the next one as soon as the last character has been typed in the previous.
 
 ### Usage

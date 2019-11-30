@@ -10,12 +10,7 @@
       "url": "https://github.com/pieringro"
     }
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.githubusercontent.com/pieringro/autochangefocus/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "homepage": "https://github.com/pieringro/autochangefocus#readme",
   "repository": {
     "type": "git",
