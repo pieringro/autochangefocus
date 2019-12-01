@@ -5,7 +5,7 @@ A chain of text inputs that automatically changes focus to the next one as soon 
 
 ### Usage
 
-Read demo/index.html
+See demo https://pieringro.github.io/autochangefocus/demo/
 
 ```
 <div id="example2"></div>
