@@ -45,12 +45,12 @@ import { Util } from './util.js'
             $(`#${id}`).on('keypress', { self: this }, function (event) {
                 var self = event.data.self;
 
+                if (!self.checkKeyPressed(id, event)) {
+                    event.preventDefault();
+                    return;
+                }
                 let currentValue = this.value;
                 if (currentValue.length < this.maxLength) {
-                    if (!self.checkKeyPressed(id, event)) {
-                        event.preventDefault();
-                        return;
-                    }
                 }
                 else {
                     if (Util.IsTextPartSelected(this) === false) {
